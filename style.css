@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+#main-container {
+  border: 1px solid lightgray;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+  box-shadow: 2px 21px 144px -36px rgba(0, 0, 0, 0.65);
+}
+
+#add-word-container,
+#suggestion-container {
+  display: flex;
+  gap: 10px;
+  width: 80%;
+  position: relative;
+}
+
+input {
+  border: 2px solid lightgray;
+  padding: 5px;
+}
+
+#add-word-container input {
+  width: 80%;
+}
+
+#add-word-container button {
+  width: 20%;
+  padding: 5px 15px;
+  background-color: rgb(102, 126, 234);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#message-container {
+  width: 80%;
+  padding: 5px;
+}
+
+#suggestion-container input {
+  width: 100%;
+}
+
+#suggestions-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  top: 28px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-left: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  box-shadow: 10px 30px 48px -29px rgba(0, 0, 0, 0.5);
+}
+
+.visible {
+  display: block !important;
+}
+
+#suggestions-menu li {
+  border-radius: 0;
+  border-top: 1px solid rgb(230, 230, 230);
+  padding: 5px;
+}
+
+#word-counter {
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(248, 250, 252);
+}
+
+#word-amount {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(102, 126, 234);
+}
+
+.success {
+  background-color: rgb(198, 246, 212);
+  border: 1px solid rgb(169, 235, 191);
+}
+
+.fail {
+  background-color: rgb(254, 215, 215);
+  border: 1px solid rgb(253, 161, 160);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+input:focus {
+  outline: none;
+}
+
+.highlight {
+  background-color: rgb(254, 215, 215);
+  font-weight: bold;
+}

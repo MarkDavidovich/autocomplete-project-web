@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="controller.js" defer></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="add-word-container">
+        <input type="text" id="add-word-field" placeholder="Enter a word to add to dictonary" />
+        <button id="add-word-btn">Add Word</button>
+      </div>
+      <div id="message-container" class="hidden">success/error message here</div>
+      <div id="suggestion-container">
+        <input type="text" id="suggestion-field" placeholder="Start typing to see suggestions..." />
+        <ul id="suggestions-menu">
+          <li>a</li>
+          <li>b</li>
+        </ul>
+      </div>
+      <div id="word-counter">
+        <div id="word-amount">0</div>
+        <p id="word-amount-text">Words in Dictionary</p>
+      </div>
+    </div>
+  </body>
+</html>
