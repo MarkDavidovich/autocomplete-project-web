@@ -1,7 +1,6 @@
 import { AutoCompleteTrie } from "./model.js";
 
 const trie = new AutoCompleteTrie(" ");
-console.log(trie);
 
 const addButton = document.querySelector("#add-word-btn");
 const inputWord = document.querySelector("#add-word-field");
